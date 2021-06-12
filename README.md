@@ -1,5 +1,6 @@
  
- 
+ This is Shereen gamal hashem and I didn't STEAL THIS!
+
  
  
  This project is would you rather and its about that if the user login in the app then it will move to the home page and in this path he will see the answered and unanswered question arranged according to the time where when he clicks on the un answered question he will see the question and he can answer to it and he will after that see the number of voting and the percentage of each option and a badge on the option he choose.
