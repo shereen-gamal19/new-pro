@@ -1,3 +1,43 @@
+ 
+ 
+ 
+ 
+ This project is would you rather and its about that if the user login in the app then it will move to the home page and in this path he will see the answered and unanswered question arranged according to the time where when he clicks on the un answered question he will see the question and he can answer to it and he will after that see the number of voting and the percentage of each option and a badge on the option he choose.
+The user can also make a new question 
+ He can click on  the leaderboard and in it he can see the score of each user arranged in descending order
+ The app can run by using npm install and yarn start
+ I use create-react-app fo the configuration
+i installed  "react-redux" , "react-router-dom" , "redux-thunk" , "react-bootstrap"
+ In the index.js file i used a Provider so that we can provide the store for all components that will need it
+ In the actions file i made actions for the questions to get the question and answer the questions and save the questions that the login user will make it and i made thunks to handle answers action and the new question 
+In the user action i made action to get all users 
+In the login user action i made action to set the login user .
+I put the the users actions and the question action and the initial data in the shared.js file 
+I made reducers for the users and question sand login user actions and i combine those reducers in the index.js file by using combineReducers()
+I made some component
+I made App component to put the navigation bar and login components to it and i put the paths for the home ,leaderboard , new question
+in the App component i put a condition so that if the user doesn't log in then we will show the error404 component and if he log in then we will show the navigation component
+In the login component i made the state is none for the TheChosenUser and i made a method called SelectedUser  to update the state
+and i used react bootstrap to make a form with options
+ and i made button so that the user cann't click on it and  go to the home page without login
+I connect the login component with the store to get all users
+I made a component for the answered questions so that it wil show the number of voting and the percentage of the options of each questions and i made a card by bootstrap and i put a badge to the selected option that the login user choose
+and i push to the home page
+I connect the AnsweredQuestions component with the store to get all users and questions and authedUser
+I made a component for the Error and i put a button to link to the home page
+I made Home component to put the answered an un answered questions in it
+I made a leaderboardCard  component to put the users in descending order according to their score and the number if questions they made and they answered
+I path the LeaderBoardCard component to the LeaderBoard component
+I made UnanswredQuestion to answer the question and if the question is null then we will go to the Error page and i made a card to select any option
+I made Question component to show part of the question in the Home page for answered and un answered question
+I made ThePageOfQuestions and i put the answered and un answered question in the if statement
+I made a NewQuestions to make a new question with the two options
+
+
+
+
+
+
 # Would You Rather Project
 
 This is the starter code for the final assessment project for Udacity's React & Redux course.
